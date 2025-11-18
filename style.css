@@ -144,88 +144,88 @@
             animation: sparkle 1.5s infinite;
         }
 
+        /* เพิ่มโค้ดนี้ก่อน </style> */
+
+/* สำหรับหน้าจอเล็กกว่า 768px (Tablet และ Mobile) */
+        @media (max-width: 768px) {
+        body {
+        padding: 10px;
+        }
+
+        h1 {
+        font-size: 2em;
+        }
+
+        .subtitle {
+        font-size: 1.1em;
+        }
+
+        header {
+        margin-bottom: 20px;
+        }   
+
+        .friends-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 20px;
+        }
+
+        .friend-card {
+        padding: 15px;
+        }
+
+        .photo-container {
+        width: 150px;
+        height: 150px;
+        }
+
+        .friend-name {
+        font-size: 1.5em;
+        }
+
+        .friend-description {
+        font-size: 1em;
+        }
+
+        .funny-quote {
+        padding: 10px;
+        font-size: 0.95em;
+        }
+
+        footer {
+        margin-top: 40px;
+        font-size: 1em;
+        }
+    }
+
+/* สำหรับหน้าจอเล็กมากๆ (Mobile เล็ก) */
+        @media (max-width: 480px) {
+        h1 {
+        font-size: 1.5em;
+        }
+
+        .subtitle {
+        font-size: 0.9em;
+        }
+
+        .photo-container {
+        width: 120px;
+        height: 120px;
+        }
+
+        .friend-name {
+        font-size: 1.3em;
+        }
+
+        .friend-description {
+        font-size: 0.9em;
+        }
+
+        .funny-quote {
+        font-size: 0.85em;
+        }
+    }
         @keyframes sparkle {
             0%, 100% { opacity: 1; transform: scale(1); }
             50% { opacity: 0.5; transform: scale(1.3); }
         }
-/* เพิ่มโค้ดนี้ก่อน </style> */
-
-/* สำหรับหน้าจอเล็กกว่า 768px (Tablet และ Mobile) */
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .subtitle {
-        font-size: 1.1em;
-    }
-
-    header {
-        margin-bottom: 20px;
-    }
-
-    .friends-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        margin-top: 20px;
-    }
-
-    .friend-card {
-        padding: 15px;
-    }
-
-    .photo-container {
-        width: 150px;
-        height: 150px;
-    }
-
-    .friend-name {
-        font-size: 1.5em;
-    }
-
-    .friend-description {
-        font-size: 1em;
-    }
-
-    .funny-quote {
-        padding: 10px;
-        font-size: 0.95em;
-    }
-
-    footer {
-        margin-top: 40px;
-        font-size: 1em;
-    }
-}
-
-/* สำหรับหน้าจอเล็กมากๆ (Mobile เล็ก) */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    .subtitle {
-        font-size: 0.9em;
-    }
-
-    .photo-container {
-        width: 120px;
-        height: 120px;
-    }
-
-    .friend-name {
-        font-size: 1.3em;
-    }
-
-    .friend-description {
-        font-size: 0.9em;
-    }
-
-    .funny-quote {
-        font-size: 0.85em;
-    }
-}
