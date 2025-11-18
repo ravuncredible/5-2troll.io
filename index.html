@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troll</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5/2 Niggas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(45deg, #1a1919, #1f1f1f, #181818, #000000);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.5em;
+            color: #ff8d3b;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .friends-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .friend-card {
+            background: rgba(66, 66, 66, 0.95);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .friend-card:hover {
+            transform: rotate(-2deg) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .friend-card:nth-child(even):hover {
+            transform: rotate(2deg) scale(1.05);
+        }
+
+        .photo-container {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #111111;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: wiggle 3s ease-in-out infinite;
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .placeholder-emoji {
+            font-size: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .friend-name {
+            font-size: 1.8em;
+            color: #ff6200;
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .friend-description {
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+        .funny-quote {
+            background: #fa7d23;
+            padding: 15px;
+            border-radius: 15px;
+            margin-top: 15px;
+            text-align: center;
+            font-style: italic;
+            color: #000000;
+            border: 3px dashed #ffffff;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: #fff;
+            font-size: 1.2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .sparkle {
+            display: inline-block;
+            animation: sparkle 1.5s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.3); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐵🦧ลิงบาบูน กูนทั้งคืน🍆🍑</h1>
+            <p class="subtitle">ติดคุกยังมีวันออก กระดอถอกไม่มีวันหุบ</p>
+        </header>
+
+        <div class="friends-grid">
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/anw.jpg" alt="anwar">
+                </div>
+                <h2 class="friend-name">อันวาร์ เจ้าชายมอ.</h2>
+                <p class="friend-description">หัวสมองด้านการเเต่งกลอนเรื่องกระจู๋</p>
+                <div class="funny-quote">
+                    "บ้านกูอยู่ในมอ กูเลยไม่ออเหมือนมึง"
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/afd.jpg" alt="afdol">
+                </div>
+                <h2 class="friend-name">อัฟดอล ลิงปัตตานี</h2>
+                <p class="friend-description">คู่อริกอริลล่าตัวดำเเห่งหอสหกรณ์</p>
+                <div class="funny-quote">
+                    "ถ้าไม่เจอครูนี่ไม่คิดจะทักกันเลยใช่มั้ย"
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/fkr.jpg" alt="fikree">
+                </div>
+                <h2 class="friend-name">ฟิกรี่ BurgerKing</h2>
+                <p class="friend-description">ตื่น,เเดก,เเหกปาก,นอนไปวันๆ</p>
+                <div class="funny-quote">
+                    "ฟิกรี ซุโบะๆๆๆๆๆๆๆๆๆๆๆ"
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/hr.jpg" alt="hari">
+                </div>
+                <h2 class="friend-name">ไอหรั่งเมกา</h2>
+                <p class="friend-description">กุรอ่านไม่รู้ความ kfcไม่รู้จบ</p>
+                <div class="funny-quote">
+                    "ยิดๆ กูเเดกหมู!!!"
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/hfz.jpg" alt="hafiz">
+                </div>
+                <h2 class="friend-name">ฮาฟิซ โลกานิโก</h2>
+                <p class="friend-description">สาวไม่เคยยุ่ง เเต่พี่มุ่งโจทย์คณิต</p>
+                <div class="funny-quote">
+                    "กูรักฮิตเลอร์ กูชอบฮิตเลอร์ กูใคร่ฮิตเลอร์"
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/syd.jpg" alt="syed">
+                </div>
+                <h2 class="friend-name">ซัยยิด เจ้าชายTikTok</h2>
+                <p class="friend-description">การบ้านไม่อยากทำ เอาเเต่ทำตัวbrainrot</p>
+                <div class="funny-quote">
+                    "คอลีผมติดธุระ,คอลีผมปวดหัว,คอลีผมไปหาหมอ,คอลีผมเจ็บเข่า"
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/apt.jpg" alt="apt">
+                </div>
+                <h2 class="friend-name">อะปะเเต 14ยุซ</h2>
+                <p class="friend-description">โยรุอันดับ 1 ในสะเดา</p>
+                <div class="funny-quote">
+                    "กูชอบFEMBOY"
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/bsr.jpg" alt="bsr">
+                </div>
+                <h2 class="friend-name">บัสรี่ อันฑะสิษฐ์</h2>
+                <p class="friend-description">Yapping Master OAT</p>
+                <div class="funny-quote">
+                    "มั่นใจจังเลย"
+                </div>
+            </div>
+
+            <div class="friend-card">
+                <div class="photo-container">
+                    <img src="image/hrs.jpg" alt="haris">
+                </div>
+                <h2 class="friend-name">ฮาริส มิดด้าม</h2>
+                <p class="friend-description">คู่อริกอริลล่าตัวดำเเห่งหอสหกรณ์V.2</p>
+                <div class="funny-quote">
+                    "ฮาริสครับ สายอีกเเล้วนะครับ"
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><span class="sparkle">🍉</span> NECK HURT <span class="sparkle"></span>🍗</p>
+            <p>MANGO MASTARD 67!</p>
+        </footer>
+    </div>
+</body>
+</html>
+</body>
+</html>
